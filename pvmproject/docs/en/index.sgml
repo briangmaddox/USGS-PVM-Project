@@ -1,0 +1,82 @@
+
+<!doctype linuxdoc system>
+<article>
+<title>The PVMProject Handbook
+<author> <tt>cbilder@mcpc1159</tt>
+<date>Version 0.1 , Wed Jun 27 11:31:23 CDT 2001
+<abstract>
+This Handbook describes PVMProject Version 0.1
+</abstract>
+
+<toc>
+
+<sect>Introduction
+<p>pvmproject is a parrallel projection program designed to handle very large
+(gigabyte) sized files.
+
+<sect1>Changes
+<p>
+
+<sect>Installation
+<p>
+<sect1>How to obtain PVMProject 
+<p>
+PVMProject should be freely availble from the MCMC gigabyte project web page<p>
+
+<sect1>Requirements
+<p>
+libtiff, libgeotiff, gctpc, USGS ImageLib, USGS Projectionlib, USGS ProjectionMesh,<p>
+USGS ProjectionIO and USGS Mathlib
+
+<sect1>Compilation and installation
+<p>
+
+In order to compile and install PVMProject on your system, install the requirements<p>
+and type the following in the base directory of the PVMProject distribution:
+
+<tscreen><verb>
+% ./configure
+% make
+% make install
+</verb></tscreen>
+
+<p>
+Since PVMProject uses <verb>autoconf</verb> you should not have any trouble
+compiling it.
+Should you run into problems please report them to the the author at 
+<htmlurl url="mailto:cbilderback@usgs.gov" name = "">
+
+
+<p>
+<sect> Usage <p>
+<sect1> General Usage
+<p>
+<tscreen><verb>
+pvmproject [configfile]
+</verb></tscreen><p>
+configfile is configuration generated from previous projection runs.
+<p>
+If a configfile is not specified then the user will be prompted to
+generate a configuration.
+
+<p>
+<sect>Questions and Answers<p>
+Q: What is the parameter file?<p>
+<tscreen>A: It is a text file that describes your desired output projection.</tscreen><p>
+Q: What is PVM?<p>
+<tscreen>A: See www.pvm.org.</tscreen><p>
+Q: Can pvmproject be used on heterogenous clusters?<p>
+<tscreen>A: Yes.  Change your pvmd host file for each machine type.</tscreen><p>
+
+<sect>Copyright<p>
+
+PVMProject copyright 2000-2001
+
+
+This program is free software under the turns of the Mozilla
+public license.  See www.mozilla.org for details.
+
+
+
+<p>
+</article>
